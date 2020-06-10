@@ -1,0 +1,190 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color:#18191F;
+    max-width: 100%;
+}
+
+body{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main{
+    margin-top: 114px;
+    max-width: 900px;
+    margin-right: 24px;
+    margin-left: 24px ;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    text-align: center;
+}
+
+header p{
+    color:#474A57;
+}
+
+form{
+    margin: 10px;
+    max-width: 800px;
+}
+
+label{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+
+}
+input{
+    height: 30px;
+    padding: 10px;
+}
+
+input,textarea{
+    border: 2px solid #18191F;
+    border-radius: 8px;
+}
+
+input:hover{
+    border: 2px solid rgb(182, 15, 15);
+
+}
+
+textarea:hover{
+    border: 2px solid rgb(182, 15, 15);
+
+}
+
+select,button{
+    color: white;
+    background: #18191F;
+    border-radius: 16px;
+}
+
+select{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+option{
+    color: white;
+}
+
+#personal-data{
+    margin-bottom: 24px;
+}
+
+#personal-data label{
+    margin-bottom: 4px;
+}
+
+#personal-data input{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#personal-data #input-middle{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#personal-data #input-middle label{
+    margin-right: 10px;
+}
+
+#personal-data #input-middle #number{
+    width: 100px;
+}
+
+#personal-data #input-middle #email{
+    width: 680px;
+}
+
+small{
+    font-size: 10px;
+    margin-left: 2px;
+}
+
+#main-discipline{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#main-discipline select{
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    width: 550px;
+}
+
+#second-discipline {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#pratice-time{
+    text-align: center;
+}
+
+#time-pratice{
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+#comments{
+    text-align: center;
+}
+
+#comments textarea{
+    width: 883px;
+    margin: 0px;
+    height: 219px;
+}
+
+#submit-btn{
+    text-align: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#submit-btn button{
+    width: 327px;
+    height: 60px;
+    left: 24px;
+    bottom: 219px;
+    font-weight: 800;
+    font-size: 21px;
+    line-height: 28px;
+    border-style:none;
+    cursor: pointer;
+    margin-top: 10px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#submit-btn button:hover{
+    background-color: rgb(182, 15, 15);
+
+}
+
+#submit-btn a span{
+    background-image: url("../assets/chevron-right.svg");
+    margin-left: 5px;
+    margin-top: 2px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+}

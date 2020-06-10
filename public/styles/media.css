@@ -1,0 +1,35 @@
+@media (max-width: 850px){
+    body{
+        width: 100vw;
+        height: auto;
+    }
+
+    main{
+        max-width: 90vw;
+    }
+
+    #personal-data #input-middle{
+        display: block;
+    }
+
+    #personal-data #input-middle #number{
+        width: 100%;
+    }
+
+    #main-discipline{
+        display: block;
+    }
+    #option-discipline h3{
+        font-size: 16px;
+    }
+
+    #second-discipline {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #time-pratice{
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css" type="text/css">
+    <link rel="stylesheet" href="./styles/media.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>Pa-kua Survey Form</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1 id="title">Pa-kua Survey Form</h1>
+            <p id="description">Thank you for taking your time to help us improve our online classes</p>
+        </header>
+
+        <form action="" id="survey-form">
+            <div id="personal-data" class="form-group">
+
+                <div id="input-name" class="field">
+                    <label for="name" id="name-label">Name</label>
+                    <input type="text"id="name" name="name" placeholder="John Doe" required>
+                </div>
+
+                <div id="input-middle" class="field">
+                    <div id="input-age">
+                        <label for="age" id="age-label">Age<small>(optional)</small></label>
+                        <input type="number" id="number" name="age" placeholder="26" min="7" max="99" maxlength="2">
+                    </div>
+                    <div id="input-email">         
+                        <label for="email" id="email-label">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="johndoe@email.com" required>
+                    </div>
+                </div>
+
+                <div id="input-phone" class="field">
+                    <label for="phone" id="number-label">Phone</label>
+                    <input type="tel" name="phone" placeholder="11998877665" maxlength ="11" required>
+                </div>
+            </div>
+
+            <div id="main-discipline" class="form-group">
+                <label for="disciplines" id="disciplines-label">Choose your main discipline:</label>
+                    <select name="disciplines" id="dropdown">
+                        <option value="acrobatics">Acrobatics</option>
+                        <option value="archery">Archery</option>
+                        <option value="chinese yoga">Chinese Yoga</option>
+                        <option value="edged weapons">Edged Weapons</option>
+                        <option value="martial arts">Martial Arts</option>
+                        <option value="pa-kua chi">Pa-kua Chi</option>
+                        <option value="rhythmn">Rhythmn</option>
+                        <option value="tai-chi">Tai-chi</option>
+                    </select>
+            </div>
+
+            <div id="option-discipline" class="form-group">
+                <h3>Choose one or more disciplines you would like to pratice but you can not because of any reason:</h3>
+                    <div id="second-discipline">
+                        <label for="acrobatics">Acrobatics<input type="checkbox" id="acrobatics" value="Acrobatics" name="acrobatics"></label>
+                        <label for="archery">Archery<input type="checkbox" id="archery" value="Archery" name="archery"></label>
+                        <label for="chinese yoga">Chinese Yoga<input type="checkbox" id="chinese yoga" value="Chinese Yoga" name="chinese yoga"></label>
+                        <label for="edged weapons">Edged Weapons<input type="checkbox" id="edged weapons" value="Edged Weapons" name="edged weapons"></label>                  
+                        <label for="martial arts">Martial Arts<input type="checkbox" id="martial arts" value="Martial Arts" name="martial arts"></label>
+                        <label for="pa-kua chi">Pa-kua Chi<input type="checkbox" id="pa-kua chi" value="Pa-kua Chi" name="pa-kua chi"></label>
+                        <label for="rhythmn">Rhythmn<input type="checkbox" id="rhythmn" value="Rhythmn" name="rhythmn"></label>
+                        <label for="tai-chi">Tai-Chi<input type="checkbox" id="tai-chi" value="Tai-Chi" name="tai-chi"></label>
+                        
+                    </div>
+            </div>
+
+            <div id="pratice-time" class="form-group">
+                <h3>What is the best time to pratice?</h3>
+
+                <div id="time-pratice">
+                    <label for="morning">Morning (06am - 10am)<input type="radio" name="period" id="morning" value="morning"></label>
+                
+                    <label for="afternoon">Afternoon (01pm - 05pm)<input type="radio" name="period" id="afternoon" value="afternoon"></label>
+                
+                    <label for="night">Night (06pm - 10pm)<input type="radio" name="period" id="night" value="night"></label>
+                </div>
+                
+            </div>
+
+            <div id="comments" class="form-group">
+                <h3>Any comments or suggestions?</h3>
+                <textarea name="comments" id="comments-area" cols="30" rows="10" placeholder="Write anything you want to say to us about the online classes..."></textarea>
+            </div>
+
+            <div id="submit-btn" class="form-group">
+                <button id="submit" type="submit">Submit <a href="#"><span id="send"></span></a></button>
+            </div>
+
+        </form>
+    </main>
+</body>
+</html>
